@@ -7,13 +7,13 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f7f3eb;
+  background-color: #cbc5c5;
 }
 
 h1 {
   margin: 0;
-  font-size: 24px;
-  color: white;
+  font-size: 34px;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -73,21 +73,22 @@ label {
 button {
   padding: 8px 15px;
   border: none;
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: #2811dc;
+  color: white;
   font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #e5e5e5;
+  background-color: #284497;
 }
 
 #grid-size-slider {
   margin: 0 10px;
+  background-color: #2811dc;
 }
 
 .x-separator {
-  margin: 0 2px;
+  margin: 0 1px;
 }
