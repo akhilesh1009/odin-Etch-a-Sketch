@@ -4,6 +4,7 @@ const gridSizeDisplay = document.getElementById("grid-size-display");
 const gridSizeDisplay2 = document.getElementById("grid-size-display-2");
 const blackModeButton = document.getElementById("black-mode-button");
 const defaultModeButton = document.getElementById("default-mode-button");
+const clearButton = document.getElementById("clear-button");
 
 let blackMode = false; // Tracks whether "Black Only" mode is active
 
@@ -54,6 +55,14 @@ blackModeButton.addEventListener("click", () => {
 
 defaultModeButton.addEventListener("click", () => {
   blackMode = false;
+});
+
+// Event listener for clearing the board
+clearButton.addEventListener("click", () => {
+  const squares = document.querySelectorAll(".grid-square");
+  squares.forEach((square) => {
+    square.style.backgroundColor = ""; // Reset background color
+  });
 });
 
 // Initialize the default grid
